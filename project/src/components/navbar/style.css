@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #292929;
+  height: 100vh;
+  width: 275px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+
+.links > div {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.links img {
+  filter: invert(1);
+  height: 20px;
+  margin-right: 40px;
+}
+
+.logo a {
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.profile img {
+  width: 95px;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 32px;
+}
+
+.profile div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.profile div div {
+  margin-top: 25px;
+  margin-bottom: 70px;
+}
