@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 import profile from "../imgs/person-circle.svg";
 import wallet from "../imgs/wallet.svg";
@@ -6,14 +6,14 @@ import robot from "../imgs/robot.svg";
 import settings from "../imgs/sliders.svg";
 import graph from "../imgs/graph-up-arrow.svg";
 
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="navbar">
       <div className="wrapper">
-        <NavLink to="/">
-          <div className="logo">CryptoHive</div>
+        <NavLink to="/" className="logo">
+          <div>CryptoHive</div>
         </NavLink>
         <div className="profile">
           <div>
@@ -24,20 +24,26 @@ function Navbar() {
         <div className="links">
           <div>
             <img src={wallet} alt="wallet-icon" />
-            <div className="link">Wallet</div>
+            <NavLink to="/wallet" className="link" activeClassName="active">
+              <div>Wallet</div>
+            </NavLink>
           </div>
           <div>
             <img src={settings} alt="settings-icon" />
-            <div className="link">Settings</div>
+            <NavLink to="/settings" className="link" activeClassName="active">
+              <div>Settings</div>
+            </NavLink>
           </div>
           <div>
             <img src={graph} alt="graph-icon" />
-            <div className="link">Trade</div>
+            <NavLink to="/trade" className="link" activeClassName="active">
+              <div>Trade</div>
+            </NavLink>
           </div>
           <div>
             <img src={robot} alt="robot-icon" />
-            <NavLink to="/chatbot">
-              <div className="link">ChatBot</div>
+            <NavLink to="/chatbot" className="link" activeClassName="active">
+              <div>ChatBot</div>
             </NavLink>
           </div>
         </div>

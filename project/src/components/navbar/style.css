@@ -28,14 +28,15 @@
   margin-right: 40px;
 }
 
-.logo a {
+.logo {
   color: white;
   font-size: 32px;
   text-decoration: none;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: 500;
 }
 
-.logo {
+.logo > div {
   margin-bottom: 50px;
 }
 
@@ -61,4 +62,15 @@
 .profile div div {
   margin-top: 25px;
   margin-bottom: 70px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
